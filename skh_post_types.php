@@ -34,6 +34,23 @@ function skh_post_types() {
         'menu_icon' => 'dashicons-welcome-learn-more'
     )); 
 
+    // SERVICE_CATEGORY - LASH BAR, BEAUTY & WEIGHTLOSS CLINIC ETC
+    register_post_type('service_categories', array(
+        'show_in_rest' => true,
+        'supports' => array('title', 'excerpt'),
+        'rewrite' => array('slug' => 'service_categories'),
+        'public' => true,
+        'show_in_rest' => true,
+        'labels' => array(
+            'name' => 'Service Categories',
+            'add_new_item' => 'Add New Service Category',
+            'edit_item' => 'Edit Service Category',
+            'all_items' => 'All Service Categories',
+            'singular_name' => 'Service Category'
+        ),
+        'menu_icon' => 'dashicons-admin-multisite'
+    ));
+
     // SERVICES - SUB CATEGORY FOR LASH BAR, BEAUTY & WEIGHTLOSS CLINICS
     register_post_type('services', array(
         'show_in_rest' => true,
@@ -51,12 +68,24 @@ function skh_post_types() {
         'menu_icon' => 'dashicons-awards'
     ));
 
+    // TEAM MEMBER POST
+    register_post_type('team_members', array(
+        'show_in_rest' => true,
+        'supports' => array('title', 'excerpt'),
+        'rewrite' => array('slug' => 'team_members'),
+        'public' => true,
+        'show_in_rest' => true,
+        'labels' => array(
+            'name' => 'Team Members',
+            'add_new_item' => 'Add New Team Member',
+            'edit_item' => 'Edit Team Member',
+            'all_items' => 'All Team Members',
+            'singular_name' => 'Team Member'
+        ),
+        'menu_icon' => 'dashicons-groups'
+    ));
 }
 
-
-
-
-// TEAM MEMEBER POST
 
 add_action('init', 'skh_post_types');
 ?>
