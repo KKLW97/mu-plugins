@@ -3,7 +3,7 @@ function skh_post_types() {
     // COURSE POST 
     register_post_type('course', array(
         'show_in_rest' => true,
-        'supports' => array('title', 'excerpt'),
+        'supports' => array('title','editor','excerpt'),
         'rewrite' => array('slug' => 'courses'),
         'public' => true,
         'show_in_rest' => true,
@@ -20,7 +20,7 @@ function skh_post_types() {
     // CLASS POST -ASSOCIATED WITH COURSE
     register_post_type('class', array(
         'show_in_rest' => true,
-        'supports' => array('title', 'excerpt'),
+        'supports' => array('title', 'editor', 'excerpt'),
         'rewrite' => array('slug' => 'classes'),
         'public' => true,
         'show_in_rest' => true,
@@ -37,7 +37,7 @@ function skh_post_types() {
     // SERVICE_CATEGORY - LASH BAR, BEAUTY & WEIGHTLOSS CLINIC ETC
     register_post_type('service_categories', array(
         'show_in_rest' => true,
-        'supports' => array('title', 'excerpt'),
+        'supports' => array('title','editor', 'excerpt'),
         'rewrite' => array('slug' => 'service_categories'),
         'public' => true,
         'show_in_rest' => true,
@@ -54,7 +54,7 @@ function skh_post_types() {
     // SERVICES - SUB CATEGORY FOR LASH BAR, BEAUTY & WEIGHTLOSS CLINICS
     register_post_type('services', array(
         'show_in_rest' => true,
-        'supports' => array('title', 'excerpt'),
+        'supports' => array('title', 'editor', 'excerpt'),
         'rewrite' => array('slug' => 'services'),
         'public' => true,
         'show_in_rest' => true,
@@ -71,7 +71,7 @@ function skh_post_types() {
     // TEAM MEMBER POST
     register_post_type('team_members', array(
         'show_in_rest' => true,
-        'supports' => array('title', 'excerpt'),
+        'supports' => array('title', 'excerpt', 'editor', 'thumbnail'),
         'rewrite' => array('slug' => 'team_members'),
         'public' => true,
         'show_in_rest' => true,
@@ -85,7 +85,6 @@ function skh_post_types() {
         'menu_icon' => 'dashicons-groups'
     ));
 }
-
 
 add_action('init', 'skh_post_types');
 ?>
