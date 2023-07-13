@@ -35,7 +35,7 @@ function skh_post_types() {
     )); 
 
     // SERVICE_CATEGORY - LASH BAR, BEAUTY & WEIGHTLOSS CLINIC ETC
-    register_post_type('service_categories', array(
+    register_post_type('service-categories', array(
         'show_in_rest' => true,
         'supports' => array('title','editor', 'excerpt'),
         'rewrite' => array('slug' => 'service_categories'),
@@ -69,7 +69,7 @@ function skh_post_types() {
     ));
 
     // TEAM MEMBER POST
-    register_post_type('team_members', array(
+    register_post_type('team-members', array(
         'show_in_rest' => true,
         'supports' => array('title', 'excerpt', 'editor', 'thumbnail'),
         'rewrite' => array('slug' => 'team_members'),
