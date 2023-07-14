@@ -84,6 +84,23 @@ function skh_post_types() {
         ),
         'menu_icon' => 'dashicons-groups'
     ));
+
+    // TRAINER POST
+    register_post_type('trainers', array(
+        'show_in_rest' => true,
+        'supports' => array('title', 'excerpt', 'editor', 'thumbnail'),
+        'rewrite' => array('slug' => 'trainers'),
+        'public' => true,
+        'show_in_rest' => true,
+        'labels' => array(
+            'name' => 'Trainers',
+            'add_new_item' => 'Add New Trainer',
+            'edit_item' => 'Edit Trainer',
+            'all_items' => 'All Trainers',
+            'singular_name' => 'Trainer'
+        ),
+        'menu_icon' => 'dashicons-universal-access'
+    ));
 }
 
 add_action('init', 'skh_post_types');
