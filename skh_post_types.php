@@ -109,7 +109,7 @@ function skh_post_types() {
         'public' => true,
         'show_in_rest' => true,
         'labels' => array(
-            'name' => 'Announcement',
+            'name' => 'Announcements',
             'add_new_item' => 'Add New Announcement',
             'edit_item' => 'Edit Announcement',
             'all_items' => 'All Announcements',
