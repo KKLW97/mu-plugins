@@ -20,7 +20,7 @@ function skh_post_types() {
     // CLASS POST -ASSOCIATED WITH COURSE
     register_post_type('class', array(
         'show_in_rest' => true,
-        'supports' => array('title', 'editor', 'excerpt'),
+        'supports' => array('title',  'excerpt'),
         'rewrite' => array('slug' => 'classes'),
         'public' => true,
         'show_in_rest' => true,
