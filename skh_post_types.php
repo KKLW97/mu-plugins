@@ -1,5 +1,21 @@
 <?php
 function skh_post_types() {
+    // ANNOUNCEMENT POST
+    register_post_type('announcement', array(
+        'show_in_rest' => true,
+        'supports' => array('title'),
+        'public' => true,
+        'show_in_rest' => true,
+        'labels' => array(
+            'name' => 'Announcements',
+            'add_new_item' => 'Add New Announcement',
+            'edit_item' => 'Edit Announcement',
+            'all_items' => 'All Announcements',
+            'singular_name' => 'Announcement'
+        ),
+        'menu_icon' => 'dashicons-megaphone'
+    ));
+
     // COURSE POST 
     register_post_type('course', array(
         'show_in_rest' => true,
@@ -102,21 +118,7 @@ function skh_post_types() {
         'menu_icon' => 'dashicons-universal-access'
     ));
 
-    // ANNOUNCEMENT POST
-    register_post_type('announcement', array(
-        'show_in_rest' => true,
-        'supports' => array('title'),
-        'public' => true,
-        'show_in_rest' => true,
-        'labels' => array(
-            'name' => 'Announcements',
-            'add_new_item' => 'Add New Announcement',
-            'edit_item' => 'Edit Announcement',
-            'all_items' => 'All Announcements',
-            'singular_name' => 'Announcement'
-        ),
-        'menu_icon' => 'dashicons-megaphone'
-    ));    
+    
 }
 
 add_action('init', 'skh_post_types');
