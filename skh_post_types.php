@@ -19,7 +19,7 @@ function skh_post_types() {
     // COURSE POST 
     register_post_type('course', array(
         'show_in_rest' => true,
-        'supports' => array('title','editor','excerpt'),
+        'supports' => array('title','editor','excerpt', 'thumbnail'),
         'rewrite' => array('slug' => 'courses'),
         'public' => true,
         'show_in_rest' => true,
