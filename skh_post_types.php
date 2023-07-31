@@ -36,7 +36,7 @@ function skh_post_types() {
     // CLASS POST -ASSOCIATED WITH COURSE
     register_post_type('class', array(
         'show_in_rest' => true,
-        'supports' => array('title',  'excerpt', 'thumbnail'),
+        'supports' => array('title', 'excerpt', 'thumbnail'),
         'rewrite' => array('slug' => 'classes'),
         'public' => true,
         'show_in_rest' => true,
@@ -53,7 +53,7 @@ function skh_post_types() {
     // SERVICE_CATEGORY - LASH BAR, BEAUTY & WEIGHTLOSS CLINIC ETC
     register_post_type('service-categories', array(
         'show_in_rest' => true,
-        'supports' => array('title','editor', 'excerpt', 'thumbnail'),
+        'supports' => array('title', 'excerpt', 'thumbnail'),
         'rewrite' => array('slug' => 'service_categories'),
         'public' => true,
         'show_in_rest' => true,
