@@ -70,7 +70,7 @@ function skh_post_types() {
     // SERVICES - SUB CATEGORY FOR LASH BAR, BEAUTY & WEIGHTLOSS CLINICS
     register_post_type('services', array(
         'show_in_rest' => true,
-        'supports' => array('title', 'excerpt', 'thumbnail'),
+        'supports' => array('title', 'thumbnail'),
         'rewrite' => array('slug' => 'services'),
         'public' => true,
         'show_in_rest' => true,
