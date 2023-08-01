@@ -19,7 +19,7 @@ function skh_post_types() {
     // COURSE POST 
     register_post_type('course', array(
         'show_in_rest' => true,
-        'supports' => array('title', 'excerpt', 'thumbnail'),
+        'supports' => array('title', 'thumbnail'),
         'rewrite' => array('slug' => 'courses'),
         'public' => true,
         'show_in_rest' => true,
@@ -36,7 +36,7 @@ function skh_post_types() {
     // CLASS POST -ASSOCIATED WITH COURSE
     register_post_type('class', array(
         'show_in_rest' => true,
-        'supports' => array('title', 'excerpt', 'thumbnail'),
+        'supports' => array('title', 'thumbnail'),
         'rewrite' => array('slug' => 'classes'),
         'public' => true,
         'show_in_rest' => true,
@@ -87,7 +87,7 @@ function skh_post_types() {
     // TEAM MEMBER POST
     register_post_type('team-members', array(
         'show_in_rest' => true,
-        'supports' => array('title', 'excerpt', 'thumbnail'),
+        'supports' => array('title', 'thumbnail'),
         'rewrite' => array('slug' => 'team_members'),
         'public' => true,
         'show_in_rest' => true,
@@ -104,7 +104,7 @@ function skh_post_types() {
     // TRAINER POST
     register_post_type('trainers', array(
         'show_in_rest' => true,
-        'supports' => array('title', 'excerpt', 'thumbnail'),
+        'supports' => array('title', 'thumbnail'),
         'rewrite' => array('slug' => 'trainers'),
         'public' => true,
         'show_in_rest' => true,
